@@ -1,0 +1,109 @@
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-appearance: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.input-area {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.input-area input {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 250px;
+  font-family: "Nunito", sans-serif;
+}
+
+.input-area button {
+  background-color: #e3e3e3;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-area button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 12px rgb(255, 255, 255, 0.6);
+}
+
+#todoListe {
+  width: 300px;
+  margin: 50px auto;
+  padding: 0;
+  list-style: none;
+}
+
+#todoListe li {
+    display: flex;   
+    align-items: center;
+    margin-bottom: 10px;   
+    gap: 15px; 
+}
+
+#todoListe li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+#todoListe li input[type="checkbox"]:checked {
+  background-color: #ffa500;
+  border: 1px solid #ffa500;
+}
+
+#todoListe li input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0a0a0a;
+  font-size: 14px;
+}
+
+#todoListe li span {
+  font-size: 18px;
+}
+
+#todoListe li .delete-Button {
+    background-color: transparent;
+    border: none;
+}
+
+#todoListe li .delete-Button svg{
+    fill: #e3e3e3;
+}
+
+#todoListe li .delete-Button svg:hover{
+    fill: #5E2028;
+        transition: all 0.5s ease-in-out;
+}
